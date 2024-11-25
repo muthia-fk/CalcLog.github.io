@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Grafik</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /* Menambahkan gaya CSS untuk memusatkan iframe */
+        #kalkulator {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Mengubah untuk rata kiri */
+            padding: 20px; /* Menambahkan padding untuk memberi ruang */
+        }
+
+        h2 {
+            margin: 0; /* Menghilangkan margin default */
+            text-align: left; /* Mengatur teks agar rata kiri */
+        }
+
+        iframe {
+            margin-top: 20px; /* Memberikan jarak di atas iframe */
+            border: none; /* Menghilangkan border iframe */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="CalcLog Logo.png" height="30px"/>Kalkulator Grafik</h1>
+        <h4>Log Your Way To Success</h4>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="mulaikuis.html">Kuis</a></li>
+                <li><a href="kalkulator.html">Kalkulator Grafik</a></li>
+                <li><a href="tim.html">Tim</a></li>
+                <li><a href="index.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="kalkulator">
+            <h2>Kalkulator Grafik GeoGebra</h2>
+            <p>Anda dapat menggunakan kalkulator grafik GeoGebra untuk menggambar grafik fungsi logaritma. Masukkan fungsi logaritma yang ingin Anda gambar, seperti <code>f(x) = log(x)</code> atau <code>f(x) = <sup>2</sup>log(x)</code>. Anda juga dapat menyesuaikan nilai basis sesuai kebutuhan.</p>
+            <p>Contoh fungsi logaritma yang dapat Anda coba:</p>
+            <ul>
+                <li><code>f(x) = log(x)</code> (Logaritma natural)</li>
+                <li><code>f(x) = <sup>10</sup>log(x)</code> (Logaritma basis 10)</li>
+                <li><code>f(x) = <sup>2</sup>log(x)</code> (Logaritma basis 2)</li>
+                <li><code>f(x) = 2*log(x)</code> (Dua kali logaritma natural)</li>
+            </ul>
+
+            <!-- Menambahkan iframe untuk kalkulator grafik GeoGebra -->
+            <iframe src="https://www.geogebra.org/graphing" width="800" height="600"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p style="color: #9d8189;">&copy; 2024 CalcLog Fungsi Logaritma</p>
+    </footer>
+
+    <script src="kuis.js"></script>
+</body>
+</html>

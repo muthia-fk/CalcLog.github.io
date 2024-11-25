@@ -1,0 +1,128 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+body {
+    font-family: 'Didot', serif; /* Menggunakan font Didot */
+    color: #333; /* Warna teks gelap untuk kontras */
+    background-color: #f0f8ff; /* Warna latar belakang pastel biru muda */
+}
+
+header {
+    background-color: #add8e6; /* Warna pastel biru muda */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #4682b4; /* Warna pastel biru sedang */
+}
+
+h4 {
+    color: #12a2db; /* Warna pastel biru muda lebih terang */
+}
+
+/* Menambahkan border pada tombol navigasi */
+#cubicle .links li a {
+    border: 2px solid #87cefa; /* Warna border pastel biru cerah */
+    padding: 10px 15px; /* Menambahkan padding untuk tampilan yang lebih baik */
+    border-radius: 5px; /* Membuat sudut border menjadi melengkung */
+    text-align: center; /* Memastikan teks berada di tengah */
+    transition: background-color 0.3s; /* Efek transisi untuk hover */
+}
+
+#cubicle .links li a:hover {
+    background-color: #e0ffff; /* Warna latar belakang saat hover */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4682b4; /* Warna pastel biru sedang */
+}
+
+/* CSS untuk border pada tombol navigasi */
+nav ul {
+    list-style-type: none; /* Menghilangkan bullet points */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+nav ul li {
+    display: inline; /* Menampilkan item navigasi secara horizontal */
+    margin-right: 10px; /* Memberikan jarak antar tombol */
+}
+
+nav ul li a {
+    border: 2px solid #87cefa; /* Warna border pastel biru cerah */
+    padding: 10px 15px; /* Padding untuk tombol */
+    border-radius: 5px; /* Sudut border melengkung */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #4682b4; /* Warna teks pastel biru sedang */
+    transition: background-color 0.3s, color 0.3s; /* Efek transisi saat hover */
+}
+
+nav ul li a:hover {
+    background-color: #e0ffff; /* Warna latar belakang saat hover */
+    color: #000; /* Mengubah warna teks saat hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #e0ffff; /* Warna pastel biru muda */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #5f9ea0; /* Warna pastel biru kehijauan */
+}
+
+h3 {
+    color: #81dfe8; /* Warna pastel biru kehijauan */
+}
+
+p {
+    color: #152a4a; /* Warna pastel biru kehijauan */
+}
+
+footer {
+    background-color: #add8e6; /* Warna pastel biru muda untuk footer */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-info {
+    text-align: center; /* Memusatkan teks dalam konten */
+}
+
+.contact-item {
+    display: inline-block; /* Agar setiap item ditampilkan dalam satu baris */
+    margin: 20px; /* Jarak antar item */
+    text-align: center; /* Memusatkan teks dalam item */
+}
+
+.contact-photo {
+    margin-bottom: 10px; /* Jarak antara gambar dan teks */
+}
+
+.contact-photo img {
+    border: 5px solid #a2d2ff; /* Bingkai gambar */
+    border-radius: 10px; /* Sudut bingkai yang melengkung */
+    width: 20%; /* Membuat gambar responsif */
+    height: auto; /* Memastikan aspek rasio gambar tetap terjaga */
+}

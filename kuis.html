@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Fungsi Logaritma</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1><img src="CalcLog Logo.png" height="30px"/>CalcLog Kuis</h1>
+        <h4>Log Your Way To Success</h4>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="mulaikuis.html">Kuis</a></li>
+                <li><a href="kalkulator.html">Kalkulator Grafik</a></li>
+                <li><a href="tim.html">Tim</a></li>
+                <li><a href="index.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="kuis">
+            <h2>Kuis Fungsi Logaritma</h2>
+            <form id="quizForm">
+                <div>
+                    <p>1. Tentukan nilai dari <sup>3</sup>log27!</p>
+                    <label><input type="radio" name="question1" value="a"> a) -1</label><br>
+                    <label><input type="radio" name="question1" value="b"> b) 0</label><br>
+                    <label><input type="radio" name="question1" value="c"> c) 1</label><br>
+                    <label><input type="radio" name="question1" value="d"> d) 2</label><br>
+                    <label><input type="radio" name="question1" value="e"> e) 3</label><br>
+                </div>
+                <div>
+                    <p>2. Bentuk sederhana dari ekspresi <sup>a</sup>log(x<sup>2</sup>y) – <sup>a</sup>log(x) adalah ...</p>
+                    <label><input type="radio" name="question2" value="a"> a) <sup>a</sup>log(x<sup>2</sup>y) - <sup>a</sup>log(x)</label><br>
+                    <label><input type="radio" name="question2" value="b"> b) <sup>a</sup> log(x) - <sup>a</sup>log(y)</label><br>
+                    <label><input type="radio" name="question2" value="c"> c) <sup>a</sup>log(x) + <sup>a</sup>log(y)</label><br>
+                    <label><input type="radio" name="question2" value="d"> d) <sup>a</sup>log(xy)</label><br>
+                    <label><input type="radio" name="question2" value="e"> e) <sup>a</sup>log(x<sup>2</sup>y)</label><br>
+                </div>
+                <div>
+                    <p>3. Berapa nilai <sup>2</sup>log5 jika diketahui <sup>10</sup>log2 = 0.3010 dan <sup>10</sup>log5 = 0.6990?</p>
+                    <label><input type="radio" name="question3" value="a"> a) 1.3980</label><br>
+                    <label><input type="radio" name="question3" value="b"> b) 0.6990</label><br>
+                    <label><input type="radio" name="question3" value="c"> c) 2.322</label><br>
+                    <label><input type="radio" name="question3" value="d"> d) 3.322</label><br>
+                    <label><input type="radio" name="question3" value="e"> e) 0.3010</label><br>
+                </div>
+                <div>
+                    <p>4. Tentukan nilai x yang memenuhi persamaan <sup>2</sup>log(x + 1) = 3!</p>
+                    <label><input type="radio" name="question4" value="a"> a) x = -1 </label><br>
+                    <label><input type="radio" name="question4" value="b"> b) x = 3</label><br>
+                    <label><input type="radio" name="question4" value="c"> c) x = 5</label><br>
+                    <label><input type="radio" name="question4" value="d"> d) x = 7</label><br>
+                    <label><input type="radio" name="question4" value="e"> e) x = 9</label><br>
+                </div>
+                <div>
+                    <p>5. Tentukan himpunan penyelesaian dari pertidaksamaan <sup>3</sup>log(x + 2) > 1</p>
+                    <label><input type="radio" name="question5" value="a"> a) x ∈ (1, ∞)</label><br>
+                    <label><input type="radio" name="question5" value="b"> b) x ∈ (-∞, 1)</label><br>
+                    <label><input type="radio" name="question5" value="c"> c) x ∈ (-∞, 3)</label><br>
+                    <label><input type="radio" name="question5" value="d"> d) x ∈ (3, ∞)</label><br>
+                    <label><input type="radio" name="question5" value="e"> e) x ∈ (-2, ∞)</label><br>
+                </div>
+                <button type="button" onclick="checkAnswers()">Kirim Jawaban</button>
+            </form>
+            <form action="mulaikuis.html">
+                <button type="submit">Kembali</button>
+            </form>
+            <form action="penyelesaian.html">
+                <button type="submit">Selanjutnya</button>
+            </form>
+            <p id="result" style="display:none;"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p style="color: #9d8189;">&copy; 2024 CalcLog Fungsi Logaritma</p>
+    </footer>
+
+    <script>
+        function checkAnswers() {
+            const answers = {
+                question1: 'e',
+                question2: 'd',
+                question3: 'c',
+                question4: 'd',
+                question5: 'a'
+            };
+
+            let score = 0;
+            let resultText = "Hasil Kuis : <br>";
+
+            for (let question in answers) {
+                const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (userAnswer) {
+                    if (userAnswer.value === answers[question]) {
+                        score++;
+                        resultText += `Soal ke-1: Benar<br>`; // Perubahan dilakukan di sini
+                    } else {
+                        resultText += `Soal ke-1: Salah (Jawaban yang benar: ${answers[question]})<br>`;
+                    }
+                } else {
+                    resultText += `Soal ke-1: Belum dijawab<br>`; // Memastikan konsistensi
+                }
+            }
+
+            // resultText += `Skor Anda: ${score} dari ${Object.keys(answers).length}`; // Baris ini dihapus
+            const resultElement = document.getElementById("result");
+            resultElement.innerHTML = resultText;
+            resultElement.style.display = "block";
+        }
+    </script>
+    <script src="kuis.js"></script>
+</body>
+</html>

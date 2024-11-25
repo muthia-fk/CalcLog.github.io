@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Fungsi Logaritma</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <h1><img src="CalcLog Logo.png" height="30px"/>CalcLog Kuis</h1>
+        <h4>Log Your Way To Success</h4>
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="materi.html">Materi</a></li>
+                <li><a href="mulaikuis.html">Kuis</a></li>
+                <li><a href="kalkulator.html">Kalkulator Grafik</a></li>
+                <li><a href="tim.html">Tim</a></li>
+                <li><a href="index.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="kuis">
+            <h2>Kuis Fungsi Logaritma</h2>
+            <form id="quizForm">
+                <div>
+                    <h3>Penyelesaian:</h3>
+                    <p>Soal ke-1: Tentukan nilai dari <sup>3</sup>log27.<br>
+                    <p>Penyelesaian:</p>
+                    <p><sup>3</sup>log27 adalah pangkat yang harus diberikan pada 3 untuk mendapatkan 27. Karena 3<sup>3</sup> = 27, maka <sup>3</sup>log27 = 3.</p>
+                    <hr>
+                    <p>Soal ke-2: Sederhanakan ekspresi <sup>a</sup>log(x<sup>2</sup>y) - <sup>a</sup>log(x).</p>
+                    <p>Penyelesaian:</p>
+                    <ul>
+                    <li><sup>a</sup>log(x<sup>m</sup>) = m<sup>a</sup>logx</li>
+                    <li><sup>a</sup>log(x/y) =<sup>a</sup> logx - <sup>a</sup>logy</li>
+                    </ul>
+                    <p>Maka:</p>
+                    <p><sup>a</sup>log(x<sup>2</sup>y) - <sup>a</sup>log(x) = <sup>a</sup>log(x<sup>2</sup>) + <sup>a</sup>log(y) - <sup>a</sup>log(x) = 2<sup>a</sup>logx + <sup>a</sup>logy - <sup>a</sup>logx = <sup>a</sup>logx + <sup>a</sup>logy = <sup>a</sup>log(xy)</p>
+                    <hr>
+                    <p>Soal ke-3: Hitung nilai <sup>2</sup>log5 jika diketahui <sup>10</sup>log2 = 0.3010 dan <sup>10</sup>log5 = 0.6990.</p>
+                    <p>Penyelesaian:</p>
+                    <p>Menggunakan rumus perubahan basis logaritma:</p>
+                    <p><sup>a</sup>logb = <sup>c</sup>logb / <sup>c</sup>loga</p>
+                    <p>Maka:</p>
+                    <p><sup>2</sup>log5 = (<sup>10</sup>log5)/<sup>10</sup>log2 = 0.6990 / 0.3010 ≈ 2.322</p>
+                    <hr>
+                    <p>Soal ke-4: Tentukan nilai x yang memenuhi persamaan <sup>2</sup>log(x + 1) = 3.</p>
+                    <p>Penyelesaian:</p>
+                    <p>Menggunakan definisi logaritma, kita ubah persamaan ke bentuk eksponensial:</p>
+                    <p>2<sup>3</sup> = x + 1</p>
+                    <p>Maka:</p>
+                    <p>8 = x + 1</p>
+                    <p>x = 7</p>
+                    <hr>
+                    <p>Soal ke-5: Tentukan himpunan penyelesaian dari pertidaksamaan log3(x + 2) > 1. 5. Menggunakan definisi logaritma, kita ubah pertidaksamaan ke bentuk eksponensial:</p>
+                    <p>Penyelesaian:</p>
+                    <p>Menggunakan definisi logaritma, kita ubah pertidaksamaan ke bentuk eksponensial:</p>
+                    <p>3<sup>1</sup> < x + 2</p>
+                    <p>Maka:</p>
+                    <p>3 < x + 2</p>
+                    <p>x > 1</p>
+                    <p>Himpunan penyelesaiannya adalah x ∈ (1, ∞).</p>
+                </div>
+            </form>
+            <form action="mulaikuis.html">
+                <button type = "submit">Kembali Ke Awal</button>
+            </form>
+            <p id="result" style="display:none;"></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p style="color: #9d8189;">&copy; 2024 CalcLog Fungsi Logaritma</p>
+    </footer>
+
+    <script src="kuis.js"></script>
+
+    
+</body>
+</html>
